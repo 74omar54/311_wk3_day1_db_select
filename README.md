@@ -43,21 +43,29 @@ Also, put the answers in the "Query Responses" section of this README.
 
 ## Query Responses
 
-1.
+1. SELECT * FROM admin.users where admin.users.city = "Chicago" => this was the query I used!
   * How many rows were returned:
+  ANSWER: There were 7 rows returned when asked for the city to equal "Chicago"
   * First name of the first user:
+  ANSWER: The first name of the first user returned when looking up the city of chicago is "Mitsue";
 
-2.
+2. select state from admin.users where admin.users.first_name = "Glory";
   * How many rows were returned:
+  ANSWER: There were only two rows returned, which means there were only 2 people with the first name of Glory.
   * What states do they live in:
+  ANSWER: The two states that both Glory's live in are Texas and Maryland!!!
 
-3.
+3. select * from admin.users where left(admin.users.phone1, 3)  = 773;
   * How many rows were returned:
+  ANSWER: There was a grand total of 6 rows that were returned with phone numbers starting with 773;
   * What's the last email on the list:
+  ANSWER: The last email on the list was (nichelle_meteer@meteer.com)
 
 ## Summary
 
 Think about how this data is laid out. Feel free to look in the `initialize.sql` file to see the raw data.
 
 * Do you think it would be easier or harder to search through this data manually or using SQL?
+ANSWER: I think it would be easier to use the SQL methods in order to search through the data, with the exception of the data field being rather small!
 * What about when the dataset gets larger?
+Answer: When the Data amount is very massive, it is important that you use a limit in order to keep the program from overloading! When the database is very large the SQL methods are life savers, so it is very important to get familiar with as many built in SQL methods as possible!
